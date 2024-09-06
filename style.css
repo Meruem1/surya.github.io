@@ -1,0 +1,299 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F9EFB2;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  background: radial-gradient(ellipse at 0% 100%, #C2B1DD 0%, #9DB9DB 60%, #ABEDC9 100%);
+  font-family: "Kirang Haerang", cursive;
+  line-height: 0.9;
+  font-feature-settings: "kern" 1;
+  -webkit-font-kerning: normal;
+          font-kerning: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.label,
+.credit {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  transform: translatex(-50%);
+  white-space: nowrap;
+  margin: 0;
+}
+
+.label {
+  font-size: 46px;
+  top: 8%;
+}
+
+.credit {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+  bottom: 8%;
+}
+.credit a {
+  color: #c1dd8b;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.body-clip {
+  cursor: pointer;
+}
+
+.crust-mask {
+  transform: translate(0, 0);
+  will-change: transform;
+  transition: transform 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.cheese-strand {
+  transform: translate(0, 0);
+  will-change: transform;
+  transition: transform 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.cheese-strand[data-index="0"] {
+  transition-delay: 157ms;
+}
+.cheese-strand[data-index="1"] {
+  transition-delay: 105ms;
+}
+.cheese-strand[data-index="2"] {
+  transition-delay: 190ms;
+}
+.cheese-strand[data-index="3"] {
+  transition-delay: 116ms;
+}
+.cheese-strand[data-index="4"] {
+  transition-delay: 133ms;
+}
+.cheese-strand[data-index="5"] {
+  transition-delay: 180ms;
+}
+.cheese-strand[data-index="6"] {
+  transition-delay: 171ms;
+}
+.cheese-strand[data-index="7"] {
+  transition-delay: 117ms;
+}
+.cheese-strand[data-index="8"] {
+  transition-delay: 135ms;
+}
+
+.cheese-gap {
+  transform: translate(0, 0);
+  will-change: transform;
+  transition: transform 1000ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.cheese-gap[data-index="0"] {
+  transition-delay: 48ms;
+}
+.cheese-gap[data-index="1"] {
+  transition-delay: 4ms;
+}
+.cheese-gap[data-index="2"] {
+  transition-delay: 7ms;
+}
+.cheese-gap[data-index="3"] {
+  transition-delay: 81ms;
+}
+.cheese-gap[data-index="4"] {
+  transition-delay: 66ms;
+}
+.cheese-gap[data-index="5"] {
+  transition-delay: 95ms;
+}
+.cheese-gap[data-index="6"] {
+  transition-delay: 55ms;
+}
+.cheese-gap[data-index="7"] {
+  transition-delay: 74ms;
+}
+
+.seed-group path[data-index="0"] {
+  transform-origin: 670px 517px;
+}
+.seed-group path[data-index="1"] {
+  transform-origin: 727px 611px;
+}
+.seed-group path[data-index="2"] {
+  transform-origin: 607px 619px;
+}
+.seed-group path[data-index="3"] {
+  transform-origin: 676px 698px;
+}
+.seed-group path[data-index="4"] {
+  transform-origin: 774px 745px;
+}
+.seed-group path[data-index="5"] {
+  transform-origin: 576px 740px;
+}
+
+.pepperoni-group circle[data-index="0"] {
+  transform-origin: 670px 517px;
+}
+.pepperoni-group circle[data-index="1"] {
+  transform-origin: 727px 611px;
+}
+.pepperoni-group circle[data-index="2"] {
+  transform-origin: 607px 619px;
+}
+.pepperoni-group circle[data-index="3"] {
+  transform-origin: 676px 698px;
+}
+.pepperoni-group circle[data-index="4"] {
+  transform-origin: 774px 745px;
+}
+.pepperoni-group circle[data-index="5"] {
+  transform-origin: 576px 740px;
+}
+
+.seed {
+  fill: #170000;
+  transform: rotate(0);
+  will-change: transform, fill;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.pepperoni {
+  fill: #170000;
+  will-change: r, fill;
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.seed[data-index="0"],
+.pepperoni[data-index="0"] {
+  transition-delay: 600ms;
+}
+.seed[data-index="1"],
+.pepperoni[data-index="1"] {
+  transition-delay: 500ms;
+}
+.seed[data-index="2"],
+.pepperoni[data-index="2"] {
+  transition-delay: 400ms;
+}
+.seed[data-index="3"],
+.pepperoni[data-index="3"] {
+  transition-delay: 300ms;
+}
+.seed[data-index="4"],
+.pepperoni[data-index="4"] {
+  transition-delay: 200ms;
+}
+.seed[data-index="5"],
+.pepperoni[data-index="5"] {
+  transition-delay: 100ms;
+}
+
+svg.to-pizza .crust-mask {
+  transform: translate(0, 80px);
+  transition-delay: 500ms;
+}
+svg.to-pizza .cheese-strand {
+  transform: translate(0, 400px);
+}
+svg.to-pizza .cheese-strand[data-index="0"] {
+  transition-delay: 184ms;
+}
+svg.to-pizza .cheese-strand[data-index="1"] {
+  transition-delay: 202ms;
+}
+svg.to-pizza .cheese-strand[data-index="2"] {
+  transition-delay: 214ms;
+}
+svg.to-pizza .cheese-strand[data-index="3"] {
+  transition-delay: 1ms;
+}
+svg.to-pizza .cheese-strand[data-index="4"] {
+  transition-delay: 233ms;
+}
+svg.to-pizza .cheese-strand[data-index="5"] {
+  transition-delay: 69ms;
+}
+svg.to-pizza .cheese-strand[data-index="6"] {
+  transition-delay: 25ms;
+}
+svg.to-pizza .cheese-strand[data-index="7"] {
+  transition-delay: 253ms;
+}
+svg.to-pizza .cheese-strand[data-index="8"] {
+  transition-delay: 227ms;
+}
+svg.to-pizza .cheese-gap {
+  transform: translate(0, 400px);
+}
+svg.to-pizza .cheese-gap[data-index="0"] {
+  transition-delay: 388ms;
+}
+svg.to-pizza .cheese-gap[data-index="1"] {
+  transition-delay: 388ms;
+}
+svg.to-pizza .cheese-gap[data-index="2"] {
+  transition-delay: 325ms;
+}
+svg.to-pizza .cheese-gap[data-index="3"] {
+  transition-delay: 319ms;
+}
+svg.to-pizza .cheese-gap[data-index="4"] {
+  transition-delay: 383ms;
+}
+svg.to-pizza .cheese-gap[data-index="5"] {
+  transition-delay: 367ms;
+}
+svg.to-pizza .cheese-gap[data-index="6"] {
+  transition-delay: 389ms;
+}
+svg.to-pizza .cheese-gap[data-index="7"] {
+  transition-delay: 371ms;
+}
+svg.to-pizza .seed {
+  fill: #BE414D;
+  transform: rotate(90deg);
+}
+svg.to-pizza .pepperoni {
+  r: 40;
+  fill: #BE414D;
+}
+svg.to-pizza .seed[data-index="0"],
+svg.to-pizza .pepperoni[data-index="0"] {
+  transition-delay: 300ms;
+}
+svg.to-pizza .seed[data-index="1"],
+svg.to-pizza .pepperoni[data-index="1"] {
+  transition-delay: 400ms;
+}
+svg.to-pizza .seed[data-index="2"],
+svg.to-pizza .pepperoni[data-index="2"] {
+  transition-delay: 500ms;
+}
+svg.to-pizza .seed[data-index="3"],
+svg.to-pizza .pepperoni[data-index="3"] {
+  transition-delay: 600ms;
+}
+svg.to-pizza .seed[data-index="4"],
+svg.to-pizza .pepperoni[data-index="4"] {
+  transition-delay: 700ms;
+}
+svg.to-pizza .seed[data-index="5"],
+svg.to-pizza .pepperoni[data-index="5"] {
+  transition-delay: 800ms;
+}
