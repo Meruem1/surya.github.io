@@ -47,5 +47,5 @@ function timeUntilSixPM() {
   const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((diff % (1000 * 60)) / 1000);
   
-  return `Time remaining until 6 PM: ${hours} hours, ${minutes} minutes, ${seconds} seconds.`;
+  return `Time remaining until 9 PM: ${hours} hours, ${minutes} minutes, ${seconds} seconds.`;
 }
