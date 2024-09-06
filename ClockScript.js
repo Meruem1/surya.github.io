@@ -32,7 +32,7 @@ function timeUntilSixPM() {
   const target = new Date();
   
   // Set the target time to 6 PM of the current day
-  target.setHours(18, 0, 0, 0); // 18:00:00.000
+  target.setHours(21, 0, 0, 0); // 18:00:00.000
   
   // If it's already past 6 PM, set target to 6 PM of the next day
   if (now > target) {
