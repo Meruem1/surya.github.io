@@ -7,8 +7,14 @@
 
 </head>
 <body>
-  <h1  id="timeRemaining" style="margin-left: 25%; margin-top: 2%; color: #e2454a;"></h1>
-  <!-- partial:index.partial.html -->
+  <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-12 text-center">
+      <h1  id="timeRemaining" style="margin-left: 20%; color: #e2454a;"></h1>
+    </div>
+    </div>
+    <div class="row mt-5">
+        <!-- partial:index.partial.html -->
 <div class="wrapper">
   <div class="face">
     <div class="seeds">
@@ -40,13 +46,20 @@
       <div class="s"></div>
     </div>
   </div>
+  <div class="row">
+    <h1 id="limitedOffer" style="color: white;">
+  </h1>
+  </div>
 </div>
 
+    </div>
 
+ 
+  </div>
+
+ 
 <!-- partial -->
 <script  src="./ClockScript.js"></script>
-<h1 id="limitedOffer" style="margin-left: 32%; margin-top: 37%; color: white;">
-</h1>
 <script>
   setTimeout(() => {
   document.getElementById('limitedOffer').innerHTML = 'Note - Hurry Up, Sexy.. Limited Offer!!'
