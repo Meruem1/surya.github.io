@@ -17,7 +17,7 @@ function setTime() {
   sHand.style.transform = `rotate( ${sDeg}deg )`;
   mHand.style.transform = `rotate( ${mDeg}deg )`;
   hHand.style.transform = `rotate( ${hDeg}deg )`;
-  document.getElementById('timeRemaining').innerHTML = timeUntilSixPM()
+ // document.getElementById('timeRemaining').innerHTML = timeUntilSixPM()
   
 
 
